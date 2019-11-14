@@ -10,7 +10,8 @@ while True:
     while (target_floor < Lower) or (target_floor > Upper) or (target_floor == current_floor) or (ask_flag == False):
         try:
             print('Currently,', current_floor, 'floor!')
-            target_floor = int(input('Which floor are you going to (1 ~ 7)?'))
+            print(Lower, '~', Upper, end = ', ')
+            target_floor = int(input('which floor are you going to?'))
         except ValueError:
             print('Please type in number!')
             continue
